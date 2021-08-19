@@ -27,17 +27,35 @@
 
 
 <!-- script内は画像スライドするやつ -->
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 
-$(document).ready(function(){
-            $('.slider').bxSlider({
+$(function(){
+            $('.bxslider').bxSlider({
                 // auto: true,
                 //  pause: 5000,
                  slideWidth: 2160,
 
              });
          });
+</script> -->
+<script>
+$(function(){
+   $('.bxslider').bxSlider({
+    
+ slideWidth: 772,
+
+
+  });
+     slider.reloadSlider();
+
+});
+
+
+
+
+
 </script>
+
 
 
 
@@ -130,13 +148,21 @@ $(document).ready(function(){
 		 <td rowspan="2">
 			
 
-               <div class="slider">
-                 <img src="img/ex1_1.jpg" alt="sample1" width="120%" height = "auto" >
-                 <img src="img/ex1_2.jpg" alt="sample2" width="120%" height="auto" >
-                 <img src="img/ex1_3.jpg" alt="sample3" width="120%" height="auto" >
-                 <img src="img/ex1_4.jpg" alt="sample4" width="120%" height="auto" >
-                 <img src="img/ex1_5.jpg" alt="sample5" width="120%" height="auto" >
-               </div>
+               <!-- <div class="slider">
+                 <img src="img/ex1_1.jpg" alt="sample1" width="100%" height = "auto">
+                 <img src="img/ex1_2.jpg" alt="sample2" width="100%" height="auto">
+                 <img src="img/ex1_3.jpg" alt="sample3" width="100%" height="auto">
+                 <img src="img/ex1_4.jpg" alt="sample4" width="100%" height="auto">
+                 <img src="img/ex1_5.jpg" alt="sample5" width="100%" height="auto">
+               </div> -->
+
+               <ul class="bxslider">
+                 <li><img src="img/ex1_1.jpg" alt="" ></li>
+                 <li><img src="img/ex1_2.jpg" alt=""></li>
+                 <li><img src="img/ex1_3.jpg" alt="" ></li>
+                 <li><img src="img/ex1_4.jpg" alt="" ></li>
+                 <li><img src="img/ex1_5.jpg" alt="" ></li>
+               </ul>
 
             
          </td>
@@ -182,15 +208,15 @@ $(document).ready(function(){
 		<tr>
 		 <td rowspan="2">
 			
+<ul class="bxslider">
+                 <li><img src="img/ex2_1.jpg" alt="" ></li>
+                 <li><img src="img/ex2_2.jpg" alt=""></li>
+                 <li><img src="img/ex2_3.jpg" alt="" ></li>
+                 <li><img src="img/ex2_4.jpg" alt="" ></li>
+                 <li><img src="img/ex2_5.jpg" alt="" ></li>
+               </ul>
 
-               <div class="slider">
-                 <img src="img/ex2_1.jpg" alt="sample1" width="120%" height = "auto" >
-                 <img src="img/ex2_2.jpg" alt="sample2" width="120%" height="auto" >
-                 <img src="img/ex2_3.jpg" alt="sample3" width="120%" height="auto" >
-                 <img src="img/ex2_4.jpg" alt="sample4" width="120%" height="auto" >
-                 <img src="img/ex2_5.jpg" alt="sample5" width="120%" height="auto" >
-               </div>
-
+      
             
          </td>
        
