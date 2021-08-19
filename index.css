@@ -12,34 +12,25 @@ overflow-y : auto;
 
 }
 
+
+
+.sp { display: none !important; }
+
+
 @media screen and (max-width: 979px) {
-
-table.row td{
-
-  max-width:100%;
-
-  display:block;
-
-}
-  }
-
-
-
-
-.pcview {
-}
-.spview {
+header img,nav{
   display: none;
-}
- 
-@media screen and (max-width: 979px) {
-  .pcview {
-    display: none;
   }
-  .spview {
-    display: block;
-  }
+
+
+.sp { display: block !important; }
+
+html,body{
+  overflow: hidden
 }
+
+}
+
 
 
 
@@ -696,6 +687,8 @@ width:10%;
 a:hover.square{
  text-decoration:none;
 }
+
+
 
 
 
