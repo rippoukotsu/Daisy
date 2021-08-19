@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="author2" content="rippoukotsu">
 <meta name="description" content="洋服のリメイク専門店">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Daisy</title>
 <link href="index.css" media="all" rel="stylesheet">
 
@@ -40,12 +41,29 @@ $(function(){
 </script> -->
 <script>
 $(function(){
-   $('.bxslider').bxSlider({
+
+if (window.matchMedia('(max-width: 767px)').matches) {
+        //スマホ処理
+        $('.bxslider').bxSlider({
     
- slideWidth: 772,
+ slideWidth: 100,
 
 
   });
+    } else if (window.matchMedia('(min-width:768px)').matches) {
+        //PC処理
+        $('.bxslider').bxSlider({
+    
+ slideWidth: 768,
+
+
+  });
+    }
+
+
+
+
+
      slider.reloadSlider();
 
 });
@@ -143,7 +161,7 @@ $(function(){
 
 
 <div class="slider0">
-	<table>
+	<table class="row">
 		<tr>
 		 <td rowspan="2">
 			
