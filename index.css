@@ -26,7 +26,8 @@ header img,nav{
 .sp { display: block !important; }
 
 html,body{
-  overflow: hidden
+  overflow: hidden;
+	  width: 100%;
 }
 
 }
