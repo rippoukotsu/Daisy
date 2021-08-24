@@ -27,6 +27,8 @@ header img,nav{
 
 html,body{
   overflow: hidden;
+ 	// 初期化
+		min-width: initial;	
 
 }
 
@@ -47,6 +49,8 @@ background-color:#EFEBE1;
 
   overflow-x : hidden;
 overflow-y : auto;
+	  // PC用の横幅を指定
+	min-width: 1080px;
 
 
 }
