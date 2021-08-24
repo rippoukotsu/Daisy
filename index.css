@@ -17,7 +17,7 @@ overflow-y : auto;
 /* .sp { display: none !important; } */
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 770px) {
 	
 	
 	
@@ -136,7 +136,7 @@ html,body{
 
 }
 
-@media screen and (min-width:769px) {
+@media screen and (min-width:771px) {
     /*　画面サイズが1024pxからはここを読み込む　*/
 
     .drawer{
