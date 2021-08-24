@@ -14,7 +14,7 @@ overflow-y : auto;
 
 
 
-.sp { display: none !important; }
+/* .sp { display: none !important; } */
 
 
 @media screen and (max-width: 499px) {
@@ -23,7 +23,7 @@ header img,nav{
   }
 
 
-.sp { display: block !important; }
+/* .sp { display: block !important; } */
 
 html,body{
   overflow: hidden;
