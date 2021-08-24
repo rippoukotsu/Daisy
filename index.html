@@ -41,11 +41,13 @@ $(function(){
 </script> -->
 <script>
 window.addEventListener('DOMContentLoaded', function(){
+	 var windowWidth = jQuery(window).width();
+  var width = windowWidth / 11*6;
 
         //PC処理
         $('.bxslider').bxSlider({
     
- slideWidth: 768,
+ slideWidth: width,
 
 
   });
