@@ -17,7 +17,7 @@ overflow-y : auto;
 .sp { display: none !important; }
 
 
-@media screen and (max-width: 979px) {
+@media screen and (max-width: 499px) {
 header img,nav{
   display: none;
   }
