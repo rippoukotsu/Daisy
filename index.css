@@ -10,6 +10,7 @@ html{
 overflow-x : hidden;
 overflow-y : auto;
 
+
 }
 
 
@@ -113,15 +114,21 @@ html,body{
  /* overflow: hidden*/
 }
    header img{
-	width:30%;
-	height:auto;
+  width:30%;
+  height:auto;
    }
 
    .photo{
 
-	 position: relative;/*相対配置*/
-   margin-top: 10%;
+   position: relative;/*相対配置*/
+   margin-top: 9%;
   }
+
+header{
+  min-width: 1019px;
+}
+
+
 
 }
 
@@ -140,7 +147,7 @@ html,body{
 
    /* .drawer{
 
-    	  display: none;
+        display: none;
     }
 */
 #hamburger{
@@ -149,10 +156,9 @@ html,body{
 }
     .photo{
 
-	 position: relative;/*相対配置*/
+   position: relative;/*相対配置*/
    margin-top: 4%;
   }
-
 
  
 }
@@ -168,10 +174,11 @@ html,body{
 body{
 
 background-color:#EFEBE1;
-	font-family: 'Comfortaa', cursive;
+  font-family: 'Comfortaa', cursive;
 
   overflow-x : hidden;
 overflow-y : auto;
+
 
 
 }
@@ -182,7 +189,6 @@ header {
         position: fixed;
         background: linear-gradient(rgba(237,214,162,1) 60%,rgba(237,214,162,0));
 
-    
     z-index: 10000;
 }
 
@@ -209,9 +215,9 @@ header img{
    text-align:right;
   margin-left: auto;
   margin-right: 5%;
-/*	display:flex;
-	*/
-	
+/*  display:flex;
+  */
+  
 
 }
 
@@ -222,9 +228,19 @@ font-family: 'Comfortaa', cursive;
 display:inline;
 }
 
+.slider0 ul{
+
+  display:flex;
+  
+  
+
+}
+
+
+
 /*.photo{
 
-	 position: relative;相対配置
+   position: relative;相対配置
    margin-top: 4%;
   }*/
 
@@ -243,8 +259,8 @@ font-weight: bold;
 
 
 .top_about{
-	margin-top: 8%;
-	margin-left: 10%;
+  margin-top: 8%;
+  margin-left: 10%;
  line-height: 40px;
 
 
@@ -297,15 +313,15 @@ width:10%;
 
 
 .top_about h3{
-	font-size:230%;
+  font-size:230%;
   line-height: 150px;
   margin-top: -2%;
 
 }
   .top_about h4{
 
-  	font-size:120%;
-  	line-height: 50px;
+    font-size:120%;
+    line-height: 50px;
     margin-bottom:2%;
      margin-top:-3%;
   }
@@ -316,9 +332,9 @@ width:10%;
 
 
   .top_Example{
-	margin-top: 7%;
-	margin-left: 10%;
-	
+  margin-top: 7%;
+  margin-left: 10%;
+  
  line-height: 40px;
 
 
@@ -327,7 +343,7 @@ width:10%;
 
   .top_Example h2{
 
-  	color: #EDB61D;
+    color: #EDB61D;
 font-weight: bold;
 
 width:10%;
@@ -345,8 +361,9 @@ width:10%;
 
 
 
-width :100%;
+max-width :100%;
 }
+
 
 
 
@@ -822,7 +839,6 @@ width:10%;
 a:hover.square{
  text-decoration:none;
 }
-
 
 
 
