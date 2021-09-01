@@ -5,6 +5,7 @@
 <meta name="author2" content="rippoukotsu">
 <meta name="description" content="洋服のリメイク専門店">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
 <title>Daisy</title>
 <link href="index.css" media="all" rel="stylesheet">
 
@@ -27,6 +28,8 @@
 
 
 
+
+
 <!-- script内は画像スライドするやつ -->
 <!-- <script type="text/javascript">
 
@@ -40,14 +43,22 @@ $(function(){
          });
 </script> -->
 <script>
-window.addEventListener('DOMContentLoaded', function(){
-	 var windowWidth = jQuery(window).width();
-  var width = windowWidth / 11*6;
 
+  
+window.addEventListener('DOMContentLoaded', function(){
+
+ var windowWidth = jQuery(window).width();
+  var width = windowWidth / 11*6;
         //PC処理
         $('.bxslider').bxSlider({
     
- slideWidth: width,
+ // slideWidth: 768,
+slideWidth: width,
+
+
+
+
+
 
 
   });
@@ -55,6 +66,7 @@ window.addEventListener('DOMContentLoaded', function(){
    // bxslider.reloadSlider();
 
 });
+
 
 
 
@@ -80,6 +92,33 @@ window.addEventListener('DOMContentLoaded', function(){
 
 
 
+<div id="hamburger">
+  <p class="btn-gNav">
+    <span></span>
+    <span></span>
+    <span></span>
+  </p>
+  <nav id="gNav" class="">
+    <ul class="gNav-menu">
+      <li><a href="#about" class="toplink">About</a></li>
+      <li><a href="#example" class="toplink">Examples</a></li>
+      <li><a href="Flow&Q&A.html" class="toplink">Flow/FAQ</a></li>
+      <li><a href="map.html" class="toplink">Access</a></li>
+      <li><a href="https://form.run/@rippoukotsu-goikenbako" target="_blank" class="toplink">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+
+
+
+
+
+
+<div class="pcmenu">
+
+
  <nav>
 
 　　　<ul>
@@ -91,37 +130,21 @@ window.addEventListener('DOMContentLoaded', function(){
 　　　　　<a href="https://form.run/@rippoukotsu-goikenbako" target="_blank" class="toplink"><li>Contact</li></a>
 　　　</ul>
  </nav>
-	
-	
-	
-	<!-- ハンバーガーメニュー -->
-<div class="drawer">
-<!-- ハンバーガーメニューの表示・非表示を切り替えるチェックボックス -->
-   <input type="checkbox" name="navToggle" id="navToggle"　class="nav-toggle">
-<!-- ハンバーガーメニューのアイコン -->
-   <label for="navToggle" class="btn-burger">
-    <span class="icon"></span>
-   </label>
-<!-- 表示されるメニューの中身 -->
-   <nav class="nav">
-    <ul class="nav-list">
-      <li>ホーム</li>
-      <li><a href="#about" class="toplink">About</a></li>
-      <li><a href="#example" class="toplink">Examples</a></li>
-      <li><a href="Flow&Q&A.html" class="toplink">Flow/FAQ</a></li>
-      <li><a href="map.html" class="toplink">Access</a></li>
-      <li><a href="https://form.run/@rippoukotsu-goikenbako" target="_blank" class="toplink">Contact</a></li>
-    </ul>
-    </nav>
- </div>
+
+</div>
+
+
+
 
 
 
 </header>
 
 
-<!-- <img class="sp" src="img/sp.png" width="100%" height="auto" alt="スマートフォン用の画像">
- -->
+
+
+<!-- <img class="sp" src="img/sp.png" width="100%" height="auto" alt="スマートフォン用の画像"> -->
+
 
 
 
@@ -255,7 +278,7 @@ window.addEventListener('DOMContentLoaded', function(){
          </td>
        
 
-       <td><img src="img/bef2_1.jpg" alt="写真"width="60%" height = "auto" ></td>
+       <td><img src="img/bef2_1.jpg" alt="写真" width="60%" height = "auto" ></td>
 
         </tr>
 
@@ -351,6 +374,7 @@ window.addEventListener('DOMContentLoaded', function(){
 
 
 <a href="index.html"><div class="square"></div></a>
+
 
 
 
