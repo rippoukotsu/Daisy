@@ -14,113 +14,105 @@ overflow-y : auto;
 
 
 
-/* .sp { display: none !important; } */
+/*.sp { display: none !important; }*/
 
 
-@media screen and (max-width: 959px) {
-	
-	
-	
-	
-	/*ハンバーガーアイコン*/
-.btn-burger {
-    cursor: pointer;
-    display: block;
-    width: 56px;
-    height: 60px;
-    position: absolute;
-    top: 5px;
-    right: 10px;
-}
-/*ハンバーガーアイコンを作る三本線*/
-.icon, .icon:before, .icon:after {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    height: 2px; /*線の太さ*/
-    width: 35px; /*線の長さ*/
-    background-color: #444;
-    border-radius: 2px;
-    display: block;
-  　content: '';
-    cursor: pointer;
-    margin: auto;
-}
-/*三本線の間隔*/
-.icon:before {
+@media screen and (max-width: 1019px) {
+
+#hamburger .btn-gNav{
+  position: fixed;
   top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 24px;
+  z-index: 3;
+  box-sizing: border-box;
+  cursor: pointer;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
 }
-.icon:after {
-  top: -20px;
+
+#hamburger .btn-gNav span{
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #666;
+  border-radius: 10px;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
 }
-/*チェックボックス非表示*/
-.nav-toggle {
-    display:none;
+#hamburger .btn-gNav span:nth-child(1) {
+  top:0;
 }
-/*アイコンをクリックしたら*/
-.nav-toggle:checked ~ .btn-burger .icon {
-    background: transparent;
+#hamburger .btn-gNav span:nth-child(2) {
+  top:10px;
 }
-.nav-toggle:checked ~ .btn-burger .icon:before {
-    transform: rotate(-45deg);
-    top: 0;
+#hamburger .btn-gNav span:nth-child(3) {
+  top:20px;
 }
-.nav-toggle:checked ~ .btn-burger .icon:after {
-    transform: rotate(45deg);
-    top: 0;
+#hamburger .btn-gNav.open span:nth-child(1){
+  background: #fff;
+  top: 6px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform   : rotate(-45deg);
+  transform        : rotate(-45deg);
 }
-.icon,
-.icon:before,
-.icon:after {
-    transition: all .8s;
+#hamburger .btn-gNav.open span:nth-child(2),#hamburger .btn-gNav.open span:nth-child(3){
+  top: 6px;
+  background :#fff;
+  -webkit-transform: rotate(45deg);
+  -moz-transform   : rotate(45deg);
+  transform        : rotate(45deg);
 }
-/*表示されるメニューの中身*/
-.nav {
-    background-color: #5c55e7;
-    
+#gNav{
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: #444;
+  font-size: 16px;
+  box-sizing: border-box;
+  z-index: 2;
+  padding-top: 50px;
+  transition: .3s;
 }
-.nav-list a {
-    display: block;
-    text-decoration: none;
-    color: #fff;
+#gNav.open{
+  right: 0px;
 }
-.nav-list {
-    list-style: none;
-    display: none;
-    margin: 0;
-    padding-left: 20px;
+#gNav .gNav-menu{
+  width: 100%:;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /*justify-content: center;*/
 }
-.nav-list li {
-    margin: 0;
-    padding: 10px;
+#gNav .gNav-menu li{
+  display: block;
+  padding : 20px 30px;
 }
-.nav-toggle:checked ~ .nav .nav-list {
-    display: block;
+#gNav .gNav-menu li a{
+  color: #ddd;
+  text-decoration: none;
 }
 
 
-	
-	
-	
-	
-	
-header nav{
- display: none;
+
+
+
+
+.pcmenu{
+  display: none;
   }
 
 
-/* .sp { display: block !important; } */
+/*.sp { display: block !important; }*/
 
 html,body{
-/*   overflow: hidden; */
- 	
-
+ /* overflow: hidden*/
 }
-	
-	
-	header img{
+   header img{
 	width:30%;
 	height:auto;
    }
@@ -131,19 +123,30 @@ html,body{
    margin-top: 10%;
   }
 
-	
-	
-
 }
 
-@media screen and (min-width:960px) {
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1020px) {
+
     /*　画面サイズが1024pxからはここを読み込む　*/
 
-    .drawer{
+   /* .drawer{
 
     	  display: none;
     }
+*/
+#hamburger{
+  display: none;
 
+}
     .photo{
 
 	 position: relative;/*相対配置*/
@@ -160,6 +163,8 @@ html,body{
 
 
 
+
+
 body{
 
 background-color:#EFEBE1;
@@ -167,7 +172,6 @@ background-color:#EFEBE1;
 
   overflow-x : hidden;
 overflow-y : auto;
-
 
 
 }
@@ -187,33 +191,42 @@ header img{
   margin-left: 3%;
 
 }
-nav {
 
+.pcmenu{
+   margin-left: auto;
+}
+.pcmenu nav {
+
+/*  margin-left: auto;
+  margin-right: 5%;*/
+
+
+
+}
+
+
+.pcmenu ul{
+   text-align:right;
   margin-left: auto;
   margin-right: 5%;
-
-}
-
-
-ul{
-
-	display:flex;
-	
+/*	display:flex;
+	*/
 	
 
 }
 
-li{
-margin:0;
+.pcmenu li{
+/*margin:0;*/
 list-style:none;
 font-family: 'Comfortaa', cursive;
+display:inline;
 }
 
-.photo{
+/*.photo{
 
-	 position: relative;/*相対配置*/
+	 position: relative;相対配置
    margin-top: 4%;
-  }
+  }*/
 
 .photo p {
 font-weight: bold;
@@ -488,7 +501,7 @@ a.toplink ::after{
   content: '';
   width: 100%;
   height: 2px;
-  background: #EDB61D;
+  background: #E2AD05;
   transform: scale(0, 1);
   transform-origin: right top;
   transition: transform .3s;
@@ -809,6 +822,7 @@ width:10%;
 a:hover.square{
  text-decoration:none;
 }
+
 
 
 
