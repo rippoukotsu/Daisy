@@ -137,6 +137,16 @@ header{
 
 
 
+.slider0{
+  margin-top:3%;
+
+
+
+
+max-width :100%;
+}
+
+
 
 
 
@@ -272,8 +282,20 @@ header{
   min-width: 1019px;
 }
 
+.slider0{
+  margin-top:3%;
+  margin-left:9%;
 
 
+
+max-width :100%;
+}
+
+
+
+
+  
+  
 }
 
 
@@ -305,6 +327,18 @@ header{
   }
 
  
+  .slider0{
+  margin-top:3%;
+  margin-left:9%;
+
+
+
+max-width :100%;
+}
+
+
+
+  
 }
 
 
@@ -499,7 +533,7 @@ width:10%;
 
 
 
-.slider0{
+/* .slider0{
   margin-top:3%;
   margin-left:9%;
 
@@ -509,7 +543,7 @@ max-width :100%;
 }
 
 
-
+ */
 
 
 
