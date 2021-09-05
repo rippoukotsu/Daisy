@@ -112,6 +112,7 @@ overflow-y : auto;
 
 html,body{
  /* overflow: hidden*/
+   font-size: 1.5vw;
 }
 /*    header img{
   width:30%;
