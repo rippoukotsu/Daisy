@@ -111,7 +111,11 @@ overflow-y : auto;
 
 html,body{
  /* overflow: hidden*/
- font-size: 4vw;
+ font-size: 2vw;
+}
+
+.minfont{
+  font-size: 3vw;
 }
 
 
@@ -228,22 +232,23 @@ margin-left:auto;
     margin-top:2%;
 
   }
-
-
 .photo p {
 font-weight: bold;
   position: absolute;/*絶対配置*/
   color: #E2AD05;/*文字色指定*/
-  font-size:120%;
-  top: 30%;
+  font-size:250%;
+  top: 40%;
   left: 10%;
   }
-  
-  
-  
+
+
+
 
 
 }
+
+
+
 
 
 
@@ -357,7 +362,7 @@ font-weight: bold;
 
 html,body{
  /* overflow: hidden*/
- font-size: 1.5vw;
+ font-size: 2vw;
 }
   /* header img{
   width:30%;
@@ -367,7 +372,7 @@ html,body{
    .photo{
 
    position: relative;/*相対配置*/
-   margin-top: 9%;
+   margin-top: 6%;
   }
 
 header{
@@ -469,18 +474,17 @@ margin-left:auto;
 
   }
 
-.photo p {
+
+  .photo p {
 font-weight: bold;
   position: absolute;/*絶対配置*/
   color: #E2AD05;/*文字色指定*/
   font-size:250%;
-  top: 25%;
+  top: 40%;
   left: 10%;
   }
-  
-  
-  
-  
+
+
 
 
 }
@@ -613,8 +617,7 @@ margin-left:auto;
 
   }
 
-
-.photo p {
+  .photo p {
 font-weight: bold;
   position: absolute;/*絶対配置*/
   color: #E2AD05;/*文字色指定*/
@@ -626,6 +629,15 @@ font-weight: bold;
 
  
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -713,7 +725,6 @@ display:inline;
    position: relative;相対配置
    margin-top: 4%;
   }*/
-
 
 
 .photo img {
