@@ -111,14 +111,17 @@ overflow-y : auto;
 
 html,body{
  /* overflow: hidden*/
- font-size: 1.5vw;
+ font-size: 3vw;
 }
 
-.minfont{
+.ph_minfont{
   font-size: 4vw;
   line-height: 250%;
-    text-align:center;
+  text-align:center;
 }
+.minfont{
+  display: none;
+  }
 
 
    header img{
@@ -239,7 +242,7 @@ font-weight: bold;
   position: absolute;/*絶対配置*/
   color: #E2AD05;/*文字色指定*/
   font-size:250%;
-  top: 40%;
+  top: 25%;
   left: 10%;
   }
 
@@ -482,10 +485,13 @@ font-weight: bold;
   position: absolute;/*絶対配置*/
   color: #E2AD05;/*文字色指定*/
   font-size:250%;
-  top: 40%;
+  top: 25%;
   left: 10%;
   }
 
+.ph_minfont{
+  display: none;
+  }
 
 
 
@@ -628,9 +634,13 @@ font-weight: bold;
   left: 10%;
   }
 
+.ph_minfont{
+  display: none;
+  }
 
  
 }
+
 
 
 
