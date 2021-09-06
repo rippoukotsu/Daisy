@@ -252,10 +252,11 @@ font-weight: bold;
 
 .cost{
   margin-top: 10%;
+  font-size: 2vw;
 }
 .exfont{
   margin-top: 10%;
-   font-size: 3vw;
+   font-size: 3.5vw;
   line-height: 200%;
 }
 
