@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="author2" content="rippoukotsu">
+<meta name="description" content="洋服のリメイク専門店">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+<title>Daisy</title>
+<link href="index.css" media="all" rel="stylesheet">
+
+
+<!-- ここまでは定型文 -->
+
+
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet"><!-- フォント -->
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"><!-- 画像スライドするやつ -->
+
+
+<link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet"><!-- FontAwesome(SNSアイコン使うやつ） -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.0.10/font-awesome-animation.css" type="text/css" media="all" /><!-- アイコンのアニメーション -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script><!-- 画像スライドするやつ -->
+
+
+
+
+
+
+<!-- script内は画像スライドするやつ -->
+<!-- <script type="text/javascript">
+
+$(function(){
+            $('.bxslider').bxSlider({
+                // auto: true,
+                //  pause: 5000,
+                 slideWidth: 2160,
+
+             });
+         });
+</script> -->
+<script>
+
+  
+window.addEventListener('DOMContentLoaded', function(){
+ var windowWidth = jQuery(window).width();
+ 
+
+ if ($(window).width() > 640) {
+ 
+  var width = windowWidth / 11*6;
+
+
+}else{
+	 var width = windowWidth-16;
+}
+        //PC処理
+        $('.bxslider').bxSlider({
+    
+ // slideWidth: 768,
+slideWidth: width,
+
+
+
+
+
+
+  });
+  
+   // bxslider.reloadSlider();
+
+});
+
+
+
+
+
+</script>
+
+
+
+
+</head>
+
+
+
+<body>
+
+
+
+
+<header>
+
+<img src="img/Daisy_icon.png" width="15%" alt="サイトロゴ">
+
+
+
+
+<div id="hamburger">
+  <p class="btn-gNav">
+    <span></span>
+    <span></span>
+    <span></span>
+  </p>
+  <nav id="gNav" class="">
+    <ul class="gNav-menu">
+      <li><a href="#about" class="toplink">About</a></li>
+      <li><a href="#example" class="toplink">Examples</a></li>
+      <li><a href="Flow&Q&A.html" class="toplink">Flow/FAQ</a></li>
+      <li><a href="map.html" class="toplink">Access</a></li>
+      <li><a href="https://form.run/@rippoukotsu-goikenbako" target="_blank" class="toplink">Contact</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+
+
+
+
+
+
+<div class="pcmenu">
+
+
+ <nav>
+
+　　　<ul>
+
+　　　　　<a href="#about" class="toplink"><li>About</li></a>
+　　　　　<a href="#example" class="toplink"><li>Examples</li></a>
+　　　　　<a href="Flow&Q&A.html" class="toplink"><li>Flow/FAQ</li></a>
+　　　　　<a href="map.html" class="toplink"><li>Access</li></a>
+　　　　　<a href="https://form.run/@rippoukotsu-goikenbako" target="_blank" class="toplink"><li>Contact</li></a>
+　　　</ul>
+ </nav>
+
+</div>
+
+
+
+
+
+
+</header>
+
+
+
+
+<!-- <img class="sp" src="img/sp.png" width="100%" height="auto" alt="スマートフォン用の画像"> -->
+
+
+
+
+
+<div class="photo">
+
+    <img src="img/top1.jpg" alt="topphoto1" width="90%" height="auto" style="display: block; margin: auto;">
+    <p>
+    	"ありのまま"<br><!-- pは段落 -->
+  　をお手伝いします。</p>
+
+
+   
+</div>
+
+<div class="top_about">
+
+	<h2 id="about">About</h2>
+<h3>Daisyは洋服リメイク専門店です。</h3>
+
+	<h4>黄色いデイジーの花言葉は"ありのまま"。</h4>
+
+	ー飽きた、趣味が変わった、でも捨てるのはもったいないから着ている。ー<br>
+そんな服を生まれ変わらせます。<br>
+過去の自分を脱ぎ捨て、今のあなたの"ありのまま"を表現してみませんか。
+
+
+	<p>当店は、お客様の思い出の衣類をリメイクし、ひとりひとりの現在にぴったりのお洋服をつくります。<br>
+	お客様が今の自分らしく輝けるよう、ご要望や好みなどをしっかりとヒアリングし、大切な１着を、お客様と一緒に丁寧につくりあげることをお約束します。</p>
+ 
+
+
+</div>
+
+
+<div class="top_Example">
+	<h2 id="example">Examples</h2>
+
+
+</div>
+
+<!-- <div class="slider0">
+
+<div class="slider">
+<img src="img/ex1_1.jpg" alt="sample1" width="100%" height = "auto" >
+<img src="img/ex1_2.jpg" alt="sample2" width="100%" height="auto" >
+<img src="img/ex1_3.jpg" alt="sample3" width="100%" height="auto" >
+<img src="img/ex1_4.jpg" alt="sample4" width="100%" height="auto" >
+<img src="img/ex1_5.jpg" alt="sample5" width="100%" height="auto" >
+</div>
+
+</div> -->
+
+
+<div class="slider0">
+	<table class="row">
+		<tr>
+		 <td rowspan="2">
+			
+
+               <!-- <div class="slider">
+                 <img src="img/ex1_1.jpg" alt="sample1" width="100%" height = "auto">
+                 <img src="img/ex1_2.jpg" alt="sample2" width="100%" height="auto">
+                 <img src="img/ex1_3.jpg" alt="sample3" width="100%" height="auto">
+                 <img src="img/ex1_4.jpg" alt="sample4" width="100%" height="auto">
+                 <img src="img/ex1_5.jpg" alt="sample5" width="100%" height="auto">
+               </div> -->
+
+               <ul class="bxslider">
+                 <li><img src="img/ex1_1.jpg" alt="" ></li>
+                 <li><img src="img/ex1_2.jpg" alt=""></li>
+                 <li><img src="img/ex1_3.jpg" alt="" ></li>
+                 <li><img src="img/ex1_4.jpg" alt="" ></li>
+                 <li><img src="img/ex1_5.jpg" alt="" ></li>
+               </ul>
+
+            
+         </td>
+       
+
+       <td><img src="img/bef1_1.jpg" alt="写真"width="60%" height = "auto" ></td>
+
+        </tr>
+
+        <tr>
+
+      
+<td valign="top"><img src="img/bef1_2.jpg" alt="写真" width="60%" height="auto" >
+<p>　　　　　　　↑お客様ご用意のお洋服</p></td></tr>
+
+
+    </table>
+
+</div>
+
+
+
+
+
+<div class="pc_slider0">
+	<table class="row">
+		<tr>
+		 <td colspan="2">
+			
+
+               <!-- <div class="slider">
+                 <img src="img/ex1_1.jpg" alt="sample1" width="100%" height = "auto">
+                 <img src="img/ex1_2.jpg" alt="sample2" width="100%" height="auto">
+                 <img src="img/ex1_3.jpg" alt="sample3" width="100%" height="auto">
+                 <img src="img/ex1_4.jpg" alt="sample4" width="100%" height="auto">
+                 <img src="img/ex1_5.jpg" alt="sample5" width="100%" height="auto">
+               </div> -->
+
+               <ul class="bxslider">
+                 <li><img src="img/ex1_1.jpg" alt="" ></li>
+                 <li><img src="img/ex1_2.jpg" alt=""></li>
+                 <li><img src="img/ex1_3.jpg" alt="" ></li>
+                 <li><img src="img/ex1_4.jpg" alt="" ></li>
+                 <li><img src="img/ex1_5.jpg" alt="" ></li>
+               </ul>
+
+            
+         </td>
+       </tr>
+        <tr>
+
+       <td><img src="img/bef1_1.jpg" alt="写真"width="100%" height = "auto" ></td>
+
+       
+
+      
+<td><img src="img/bef1_2.jpg" alt="写真" width="100%" height="auto" ></td>
+
+</tr>
+
+
+    </table>
+<p>　　　　　　　↑お客様ご用意のお洋服</p>
+
+</div>
+
+
+
+
+
+
+
+
+
+       
+<div class="ex1_tex">
+<P>"可愛いお洋服を個性的で格好良いお洋服に変身させたい"というご要望に沿ってデザインを提案し、お客様と話し合いを重ねながら製作致しました。<br></P>
+
+お客様ご用意のお洋服| 2着<br>
+当店ご用意のお洋服| 1着<br>
+料金| 25,900円(製作費＋デザイン費＋当店ご用意のお洋服代)
+	  　
+</div>
+
+
+
+
+<div class="slider0">
+	<table>
+		<tr>
+		 <td rowspan="2">
+			
+<ul class="bxslider">
+                 <li><img src="img/ex2_1.jpg" alt="" ></li>
+                 <li><img src="img/ex2_2.jpg" alt=""></li>
+                 <li><img src="img/ex2_3.jpg" alt="" ></li>
+                 <li><img src="img/ex2_4.jpg" alt="" ></li>
+                 <li><img src="img/ex2_5.jpg" alt="" ></li>
+               </ul>
+
+      
+            
+         </td>
+       
+
+       <td><img src="img/bef2_1.jpg" alt="写真" width="60%" height = "auto" ></td>
+
+        </tr>
+
+       
+
+      
+<tr><td valign="top"><img src="img/bef2_2.jpg" alt="写真" width="60%" height="auto" >
+<p>　　　　　　　↑お客様ご用意のお洋服</p></td></tr>
+
+
+    </table>
+
+</div>
+
+
+<div class="pc_slider0">
+	<table class="row">
+		<tr>
+		 <td colspan="2">
+			
+
+               <!-- <div class="slider">
+                 <img src="img/ex1_1.jpg" alt="sample1" width="100%" height = "auto">
+                 <img src="img/ex1_2.jpg" alt="sample2" width="100%" height="auto">
+                 <img src="img/ex1_3.jpg" alt="sample3" width="100%" height="auto">
+                 <img src="img/ex1_4.jpg" alt="sample4" width="100%" height="auto">
+                 <img src="img/ex1_5.jpg" alt="sample5" width="100%" height="auto">
+               </div> -->
+
+               <ul class="bxslider">
+                 <li><img src="img/ex2_1.jpg" alt="" ></li>
+                 <li><img src="img/ex2_2.jpg" alt=""></li>
+                 <li><img src="img/ex2_3.jpg" alt="" ></li>
+                 <li><img src="img/ex2_4.jpg" alt="" ></li>
+                 <li><img src="img/ex2_5.jpg" alt="" ></li>
+               </ul>
+
+            
+         </td>
+       </tr>
+        <tr>
+
+       <td><img src="img/bef2_1.jpg" alt="写真"width="100%" height = "auto" ></td>
+
+       
+
+      
+<td><img src="img/bef2_2.jpg" alt="写真" width="100%" height="auto" ></td>
+
+
+</tr>
+
+
+    </table>
+<p>　　　　　　　↑お客様ご用意のお洋服</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="ex1_tex">
+<P>お客様にデザイン案をお持ちいただき、それをもとに製作致しました。<br></P>
+
+お客様ご用意のお洋服| 2着<br>
+当店ご用意のお洋服| 0着<br>
+料金| 10,600円(製作費)
+	  　
+</div>
+
+
+
+
+<div class="bottomcolar">
+
+
+<div class="top_contact">
+<h2>　　　　Contact</h2>
+<a href="https://form.run/@rippoukotsu-goikenbako" class="iconlink"><p class="con">お問い合わせ/お見積もり（ご意見箱）</p></a>
+<p class="con1">こちらにご意見ご感想等お寄せいただけると嬉しいです</p>
+</div>
+
+
+
+
+
+
+<div class="sns0">
+
+ <p> 定休日:月曜日</p>
+  <p>10:00~17:30</p>
+
+
+
+<p><img src="img/Daisy_icon.png" width="20%" alt="サイトロゴ"></p>
+
+
+
+
+	<div class="sns1">
+		Follow us　ー　
+	<a href="https://twitter.com/takuten_geikou" class="iconlink"><i class="fab fa-twitter fa-2x iconcolar fa-fw faa-shake animated-hover"></i></a>
+
+	<a href="https://www.instagram.com/takuten2021" class="iconlink"><i class="fab fa-instagram fa-2x iconcolar fa-fw faa-vertical  animated-hover"></i></a>
+
+
+
+    </div>
+
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div>
+	<footer>
+		<div class="foot">
+		<p>Copyright © 2021 Rippoukotsu All rights reserved.</p>
+
+	</div>
+	</footer>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="index.html"><div class="square"></div></a>
+
+
+
+　　　<script src="faq.js"></script>
+
+</body>
+
+
+
+
+</html>
