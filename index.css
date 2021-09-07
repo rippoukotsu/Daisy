@@ -111,18 +111,20 @@ overflow-y : auto;
 
 html,body{
  /* overflow: hidden*/
- font-size: 2vw;
+ font-size: 2.2vw;
 }
 
 .ph_minfont{
-  font-size: 4vw;
+  font-size: 4.5vw;
   line-height: 250%;
   text-align:center;
 }
 .minfont{
   display: none;
   }
-
+.phfont_map{
+  font-size: 2.8vw;
+}
 
 
 
@@ -311,6 +313,15 @@ p.con1{
  
 }
 
+
+.qa-list{
+  margin-right: 15%;
+  margin-left: 15%;
+   margin-top: 5%;
+  
+ margin-bottom: 10%;
+  
+}
 
 }
 
@@ -567,8 +578,24 @@ font-weight: bold;
   z-index: 10001;
  
 }
+.qa-list{
+  margin-right: 15%;
+  margin-left: 15%;
+   margin-top: 5%;
+    margin-bottom: 10%;
+
+  
+}
 
 }
+
+
+
+
+
+
+
+
 
 
 
@@ -723,7 +750,15 @@ font-weight: bold;
   z-index: 10001;
  
 }
+.qa-list{
+  margin-right: 15%;
+  margin-left: 15%;
+   margin-top: 5%;
+    margin-bottom: 10%;
 
+
+  
+}
 
 
  
@@ -1230,13 +1265,7 @@ width:14%;
 
 
 
-.qa-list{
-  margin-right: 15%;
-  margin-left: 15%;
-   margin-top: 5%;
-  
-  
-}
+
 
 
 .qa-list dl {
@@ -1307,7 +1336,7 @@ width:14%;
     margin-top: 0;
 }
 
-@media screen and (max-width: 767px) {/*なんか文字のサイズ変わる*/
+@media screen and (max-width: 767px) {
 .qa-list dl {
     position: relative;
     padding: 15px 40px 15px 10px;
@@ -1320,7 +1349,7 @@ width:14%;
 }
 .qa-list dl dt {
     padding: 0 0 0 30px;
-    font-size: 14px;
+    font-size: 14px;/*スマホの時の文字サイズ*/
 }
 .qa-list dl dt::before {
     font-size: 14px;
