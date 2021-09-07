@@ -124,6 +124,8 @@ html,body{
   }
 
 
+
+
    header img{
   width:10%;
   height:auto;
@@ -196,6 +198,7 @@ font-weight: bold;
 
 width:23%;
   border-bottom: solid 1.5em #EDB61D;
+  margin-top:20%;
   
  
 
@@ -209,8 +212,8 @@ color: #EDB61D;
 font-weight: bold;
 
 width:23%;
-  border-bottom: solid 1em #EDB61D;
-     margin-top:50%;
+  border-bottom: solid 1.5em #EDB61D;
+     margin-top:20%;
  
 
 
@@ -224,8 +227,9 @@ font-weight: bold;
 
 width:23%;
   border-bottom: solid 1.5em #EDB61D;
-  padding-top: 140px;
-   margin-top:-170px;
+/*  padding-top: 140px;
+   margin-top:-170px;*/
+
   
 
   }
@@ -1230,7 +1234,7 @@ width:14%;
   margin-right: 15%;
   margin-left: 15%;
    margin-top: 5%;
-    margin-bottom: 10%;
+  
   
 }
 
