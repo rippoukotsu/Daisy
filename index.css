@@ -50,7 +50,7 @@ overflow-y : auto;
   top:20px;
 }
 #hamburger .btn-gNav.open span:nth-child(1){
-  background: #fff;
+  background: #666;
   top: 6px;
   -webkit-transform: rotate(-45deg);
   -moz-transform   : rotate(-45deg);
@@ -58,7 +58,7 @@ overflow-y : auto;
 }
 #hamburger .btn-gNav.open span:nth-child(2),#hamburger .btn-gNav.open span:nth-child(3){
   top: 6px;
-  background :#fff;
+  background :#666;
   -webkit-transform: rotate(45deg);
   -moz-transform   : rotate(45deg);
   transform        : rotate(45deg);
@@ -69,7 +69,7 @@ overflow-y : auto;
   right: -100%;
   width: 100%;
   height: 100%;
-  background: #444;
+  background: #EDD496;
   font-size: 16px;
   box-sizing: border-box;
   z-index: 2;
@@ -85,6 +85,7 @@ overflow-y : auto;
   display: flex;
   flex-direction: column;
   text-align: center;
+    
   /*justify-content: center;*/
 }
 #gNav .gNav-menu li{
@@ -92,10 +93,9 @@ overflow-y : auto;
   padding : 20px 30px;
 }
 #gNav .gNav-menu li a{
-  color: #ddd;
+  color: #666;
   text-decoration: none;
 }
-
 
 
 
@@ -210,7 +210,7 @@ font-weight: bold;
 
 width:23%;
   border-bottom: solid 1em #EDB61D;
-  margin-top:20%;
+     margin-top:50%;
  
 
 
@@ -294,7 +294,18 @@ p.con1{
 
     margin-top: -50px;
 }*/
-
+.square {
+  position: absolute;/*絶対配置*/
+  top:0;
+  left:3%;
+   position: fixed;
+  width: 95px;
+  height: 54px;
+  background: #00000000;
+/*  background:green;*/
+  z-index: 10001;
+ 
+}
 
 
 }
@@ -493,7 +504,7 @@ font-weight: bold;
 
 width:16%;
   border-bottom: solid 1em #EDB61D;
-  
+
  
 
 
@@ -540,7 +551,18 @@ font-weight: bold;
   display: none;
   }
 
-
+.square {
+  position: absolute;/*絶対配置*/
+  top:0;
+  left:2%;
+   position: fixed;
+  width: 140px;
+  height: 70px;
+  background: #00000000;
+ /* background:green;*/
+  z-index: 10001;
+ 
+}
 
 }
 
@@ -685,6 +707,21 @@ font-weight: bold;
   display: none;
   }
 
+.square {
+  position: absolute;/*絶対配置*/
+  top:0;
+  left:2%;
+   position: fixed;
+  width: 14vw;
+  height: 7vw;
+  background: #00000000;
+
+  z-index: 10001;
+ 
+}
+
+
+
  
 }
 
@@ -730,6 +767,7 @@ header {
 
 header img{
   margin-left: 1.5%;
+     z-index: 10010;
 
 }
 
@@ -1377,17 +1415,7 @@ height: 70%;
 
 
 
-.square {
-  position: absolute;/*絶対配置*/
-  top:0;
-  left:3%;
-   position: fixed;
-  width: 203px;
-  height: 110px;
-  background: #00000000;
-  z-index: 10001;
- 
-}
+
 
 
 
