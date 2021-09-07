@@ -1339,12 +1339,25 @@ width:14%;
   }
 
 
-  .map{
-      margin-top: 4%;
+  .map {
+position: relative;
+padding-bottom: 56.25%;
+padding-top: 30px;
+height: 0;
+overflow: hidden;
+ margin-top: 4%;
        margin-bottom: 10%;
   margin-left: 10%;
- width:40%;
-  }
+}
+ 
+.map iframe{
+position: absolute;
+top: 0;
+left: 0;
+width: 90%;
+height: 70%;
+}
+
 
 
 
