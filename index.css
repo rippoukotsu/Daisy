@@ -144,6 +144,8 @@ header{
 
 .slider0 {
 display:none;
+ 
+
 }
 .pc_slider0{
  
@@ -167,8 +169,8 @@ font-weight: bold;
 
 width:23%;
   border-bottom: solid 1.5em #EDB61D;
-  padding-top: 160px;
-   margin-top:-160px;
+  padding-top: 70px;
+   margin-top:-70px;
   
 
   }
@@ -180,8 +182,8 @@ font-weight: bold;
 
 width:23%;
   border-bottom: solid 1.5em #EDB61D;
-  padding-top: 160px;
-   margin-top:-160px;
+  padding-top: 70px;
+   margin-top:-70px;
 
   }
 
@@ -254,7 +256,7 @@ font-weight: bold;
 .cost{
   margin-top: 10%;
   font-size: 3vw;
-   margin-bottom: 10%;
+  margin-bottom: 10%;
 }
 .exfont{
   margin-top: 10%;
@@ -283,10 +285,14 @@ p.con1{
 }
 
 
-
 /*
 .top_Example{
      font-size:2.5vw;
+}*/
+/*h2.anchor{
+    display: block;
+
+    margin-top: -50px;
 }*/
 
 
@@ -1339,6 +1345,15 @@ width:14%;
     font-size: 120%;
   }
 
+
+  /*.map{
+      margin-top: 4%;
+       margin-bottom: 10%;
+  margin-left: 10%;
+ width:40%;
+ padding-bottom: 56.25%;
+ position: relative;
+  }*/
 
   .map {
 position: relative;
