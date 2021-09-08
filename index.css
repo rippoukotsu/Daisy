@@ -216,7 +216,7 @@ color: #EDB61D;
 font-weight: bold;
 
 width:23%;
-  border-bottom: solid 1.5em #EDB61D;
+  border-bottom: solid 1.45em #EDB61D;
      margin-top:20%;
  
 
@@ -231,6 +231,8 @@ font-weight: bold;
 
 width:23%;
   border-bottom: solid 1.5em #EDB61D;
+
+  margin-top:-10%;
 /*  padding-top: 140px;
    margin-top:-170px;*/
 
@@ -328,7 +330,7 @@ p.con1{
 
 .ph_flow {
 text-align:center;
-margin-top: -2%;
+margin-top: 5%;
 }
 
 .flow{
@@ -494,8 +496,8 @@ max-width :100%;
 color: #EDB61D;
 font-weight: bold;
 
-width:16%;
-  border-bottom: solid 1.5em #EDB61D;
+width:18%;
+  border-bottom: solid 1.4em #EDB61D;
   padding-top: 140px;
    margin-top:-170px;
   
@@ -507,8 +509,8 @@ width:16%;
     color: #EDB61D;
 font-weight: bold;
 
-width:16%;
-  border-bottom: solid 1.5em #EDB61D;
+width:18%;
+  border-bottom: solid 1.4em #EDB61D;
   padding-top: 140px;
    margin-top:-160px;
 
@@ -521,8 +523,8 @@ width:16%;
 color: #EDB61D;
 font-weight: bold;
 
-width:16%;
-  border-bottom: solid 1.5em #EDB61D;
+width:18%;
+  border-bottom: solid 1.4em #EDB61D;
   
  
 
@@ -535,8 +537,8 @@ width:16%;
 color: #EDB61D;
 font-weight: bold;
 
-width:16%;
-  border-bottom: solid 1em #EDB61D;
+width:18%;
+  border-bottom: solid 1.4em #EDB61D;
 
  
 
@@ -549,8 +551,8 @@ width:16%;
 color: #EDB61D;
 font-weight: bold;
 
-width:16%;
-  border-bottom: solid 1.5em #EDB61D;
+width:18%;
+  border-bottom: solid 1.4em #EDB61D;
   padding-top: 140px;
    margin-top:-170px;
   
@@ -562,8 +564,8 @@ width:16%;
     color: #EDB61D;
 font-weight: bold;
 
-width:13%;
-  border-bottom: solid 1.5em #EDB61D;
+width:16%;
+  border-bottom: solid 1.35em #EDB61D;
 margin-left:auto;
   margin-right:10%;
     margin-top:2%;
@@ -750,8 +752,8 @@ width:14%;
     color: #EDB61D;
 font-weight: bold;
 
-width:12%;
-  border-bottom: solid 1.5em #EDB61D;
+width:11%;
+  border-bottom: solid 1.45em #EDB61D;
 margin-left:auto;
   margin-right:10%;
     margin-top:2%;
