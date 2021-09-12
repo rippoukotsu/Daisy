@@ -197,7 +197,7 @@ $(this).removeClass('fadeDown');
 $(function(){
 
 	// 自分のサイトからのアクセスでなければ...
-if (host !== "rippoukotsu.github.io") {
+
 
  	$('.start p').fadeIn(1000);
 		
@@ -206,7 +206,7 @@ if (host !== "rippoukotsu.github.io") {
 
 		$('.fon').fadeOut(500,function(){$(this).fadeIn(500)});
 		  },1000);//１秒毎に点滅
-	}
+	
 
 
  	});
@@ -215,14 +215,17 @@ if (host !== "rippoukotsu.github.io") {
  	$(window).on('load', function(){
  		 var now = new Date().getTime();
  		 if (host !== "rippoukotsu.github.io") {
+  
   if (now-starttime<=3000) {
   	setTimeout('stopload()',3000-(now-starttime));
  			return;
   } else {
     stopload();
   }
-
+}else{
+	    stopload();
 }
+
  	});
 
  	function stopload(){

@@ -586,7 +586,7 @@ width:0%;
 /*下からの距離が変化して全体が下→上→下に動く*/
 @keyframes arrowmove{
       0%{bottom:3%;}
-      50%{bottom:5%;}
+      50%{bottom:7%;}
      100%{bottom:3%;}
  }
 
@@ -598,7 +598,7 @@ width:0%;
   bottom:3px;
     /*テキストの形状*/
   color: #fff;
-  font-size: 0.01rem;
+  font-size: 11px;
   letter-spacing: 0.05em;
   /*縦書き設定*/
   -ms-writing-mode: tb-rl;
@@ -2539,7 +2539,7 @@ animation-name:fadeUpAnime;
 animation-duration:1.2s;
 animation-fill-mode:forwards;
 opacity:0;
-animation-delay: 0.6s;
+animation-delay: 0.2s;
 }
 
 @keyframes fadeUpAnime{
@@ -2566,7 +2566,7 @@ animation-name:fadeDownAnime;
 animation-duration:1.2s;
 animation-fill-mode:forwards;
 opacity:0;
-animation-delay: 0.6s;
+animation-delay: 0.2s;
 }
 
 @keyframes fadeDownAnime{
