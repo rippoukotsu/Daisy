@@ -197,7 +197,7 @@ $(this).removeClass('fadeDown');
 $(function(){
 
 	// 自分のサイトからのアクセスでなければ...
-
+if (host !== "rippoukotsu.github.io") {
 
  	$('.start p').fadeIn(1000);
 		
@@ -207,7 +207,7 @@ $(function(){
 		$('.fon').fadeOut(500,function(){$(this).fadeIn(500)});
 		  },1000);//１秒毎に点滅
 	
-
+}
 
  	});
 
