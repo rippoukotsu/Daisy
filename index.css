@@ -171,7 +171,7 @@ html,body{
    .photo{
 
    position: relative;/*相対配置*/
-   margin-top: 9%;
+   margin-top: 5%;
   }
 
 header{
@@ -388,7 +388,7 @@ width:0%;
   position: absolute;
  /* left: 0;
   bottom: 0;*/
-  margin-top: 83px;
+  margin-top: 90px;
   
   border-bottom: solid 2em #EDB61D;
   animation: border_anim_ph 0.6s linear forwards;
@@ -530,7 +530,7 @@ width:0%;
   position: absolute;
  /* left: 0;
   bottom: 0;*/
-  margin-top:22px;
+  margin-top:29px;
   
   border-bottom: solid 2em #EDB61D;
   animation: border_anim_ph 0.6s linear forwards;
@@ -554,7 +554,7 @@ width:0%;
   bottom: 0;*/
   left: 90%;
   transform: translateX(-100%);
-  margin-top:18px;
+  margin-top:25px;
     margin-right:100%;
 
   
@@ -568,6 +568,69 @@ width:0%;
  
 }
 
+
+
+
+/*=== 9-1-4 矢印が動いてスクロールを促す  ====*/
+
+/*スクロールダウン全体の場所*/
+.scrolldown4{
+    /*描画位置※位置は適宜調整してください*/
+  position:absolute;
+  bottom:0;
+  right:10%;
+    /*矢印の動き1秒かけて永遠にループ*/
+  animation: arrowmove 1s ease-in-out infinite;
+}
+
+/*下からの距離が変化して全体が下→上→下に動く*/
+@keyframes arrowmove{
+      0%{bottom:3%;}
+      50%{bottom:5%;}
+     100%{bottom:3%;}
+ }
+
+/*Scrollテキストの描写*/
+.scrolldown4 span{
+    /*描画位置*/
+  position: absolute;
+  left:-15px;
+  bottom:3px;
+    /*テキストの形状*/
+  color: #fff;
+  font-size: 0.01rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+/* 矢印の描写 */
+.scrolldown4:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    /*矢印の形状*/
+    width: 0.75px;
+    height: 15px;
+    background: #fff;
+    transform: skewX(-37deg);
+}
+
+.scrolldown4:after{
+  content:"";
+    /*描画位置*/
+  position: absolute;
+  bottom:0;
+  right:0;
+    /*矢印の形状*/
+  width:0.75px;
+  height: 40px;
+  background:#fff;
+}
 
 
 
@@ -704,7 +767,7 @@ html,body{
    .photo{
 
    position: relative;/*相対配置*/
-   margin-top: 6%;
+   margin-top: 4%;
   }
 
 header{
@@ -774,7 +837,7 @@ font-weight: bold;
 color: #EDB61D;
 font-weight: bold;
  margin-bottom:10%;
-  margin-top:20%;
+  margin-top:15%;
 
 /*width:18%;
   border-bottom: solid 1.4em #EDB61D;*/
@@ -1059,6 +1122,69 @@ width:0%;
  
 }
 
+/*=== 9-1-4 矢印が動いてスクロールを促す  ====*/
+
+/*スクロールダウン全体の場所*/
+.scrolldown4{
+    /*描画位置※位置は適宜調整してください*/
+  position:absolute;
+  bottom:0;
+  right:10%;
+    /*矢印の動き1秒かけて永遠にループ*/
+  animation: arrowmove 1s ease-in-out infinite;
+}
+
+/*下からの距離が変化して全体が下→上→下に動く*/
+@keyframes arrowmove{
+      0%{bottom:3%;}
+      50%{bottom:5%;}
+     100%{bottom:3%;}
+ }
+
+/*Scrollテキストの描写*/
+.scrolldown4 span{
+    /*描画位置*/
+  position: absolute;
+  left:-20px;
+  bottom:3px;
+    /*テキストの形状*/
+  color: #fff;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+/* 矢印の描写 */
+.scrolldown4:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    /*矢印の形状*/
+    width: 2px;
+    height: 30px;
+    background: #fff;
+    transform: skewX(-21deg);
+}
+
+.scrolldown4:after{
+  content:"";
+    /*描画位置*/
+  position: absolute;
+  bottom:0;
+  right:0;
+    /*矢印の形状*/
+  width:2px;
+  height: 75px;
+  background:#fff;
+}
+
+
+
 
 
 
@@ -1097,7 +1223,7 @@ width:0%;
     .photo{
 
    position: relative;/*相対配置*/
-   margin-top: 4%;
+   margin-top: -4%;
   }
 
   .slider0{
@@ -1216,7 +1342,7 @@ font-weight: bold;
   position: absolute;/*絶対配置*/
   color: #E2AD05;/*文字色指定*/
   font-size:250%;
-  top: 25%;
+  top: 30%;
   left: 10%;
   }
 
@@ -1467,6 +1593,70 @@ width:0%;
 
 
 
+
+
+/*=== 9-1-4 矢印が動いてスクロールを促す  ====*/
+
+/*スクロールダウン全体の場所*/
+.scrolldown4{
+    /*描画位置※位置は適宜調整してください*/
+  position:absolute;
+  bottom:30%;
+  right:10%;
+    /*矢印の動き1秒かけて永遠にループ*/
+  animation: arrowmove 1s ease-in-out infinite;
+}
+
+/*下からの距離が変化して全体が下→上→下に動く*/
+@keyframes arrowmove{
+      0%{bottom:21%;}
+      50%{bottom:23%;}
+     100%{bottom:21%;}
+ }
+
+/*Scrollテキストの描写*/
+.scrolldown4 span{
+    /*描画位置*/
+  position: absolute;
+  left:-25px;
+  bottom:10px;
+    /*テキストの形状*/
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+  /*縦書き設定*/
+  -ms-writing-mode: tb-rl;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+/* 矢印の描写 */
+.scrolldown4:before {
+    content: "";
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: -6px;
+    /*矢印の形状*/
+    width: 2px;
+    height: 40px;
+    background: #fff;
+    transform: skewX(-15deg);
+}
+
+.scrolldown4:after{
+  content:"";
+    /*描画位置*/
+  position: absolute;
+  bottom:0;
+  right:0;
+    /*矢印の形状*/
+  width:2px;
+  height: 100px;
+  background:#fff;
+}
+
+
  
 }
 
@@ -1571,6 +1761,7 @@ display:inline;
 
 .photo img {
   width: 100%;
+  margin-top:-50%;
   }
 
 
@@ -1805,7 +1996,7 @@ p.con1:after{
    
   margin-left:10%;
   margin-top:-13%;
-  margin-bottom: 2%;
+  /*margin-bottom: 2%;*/
   color:#828282;
   margin-right:10%;
   
@@ -1885,6 +2076,8 @@ footer{
 
   text-align:center;
   background-color:#EDD496;
+
+
 
 }
 
@@ -2227,16 +2420,43 @@ opacity: 0;
 }
 .fadeUp{
 animation-name:fadeUpAnime;
-animation-duration:1s;
+animation-duration:1.2s;
 animation-fill-mode:forwards;
 opacity:0;
-animation-delay: 0.4s;
+animation-delay: 0.6s;
 }
 
 @keyframes fadeUpAnime{
   from {
     opacity: 0;
-  transform: translateY(50%);
+  transform: translateY(40%);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+.fadeDownTrigger{
+  opacity: 0;
+}
+
+
+
+
+.fadeDown{
+animation-name:fadeDownAnime;
+animation-duration:1.2s;
+animation-fill-mode:forwards;
+opacity:0;
+animation-delay: 0.6s;
+}
+
+@keyframes fadeDownAnime{
+  from {
+    opacity: 0;
+  transform: translateY(-40%);
   }
 
   to {
@@ -2246,7 +2466,51 @@ animation-delay: 0.4s;
 }
 
 
-
 span{
   display:block;
 }
+
+
+
+
+/*.arrow{
+    position: relative;
+    display: inline-block;
+    padding: 0 0 0 16px;
+    color: #000;
+    vertical-align: middle;
+    text-decoration: none;
+   
+}
+.arrow::before,
+.arrow::after{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin: auto;
+    content: "";
+    vertical-align: middle;
+}
+
+
+.sample5-6::before{
+    box-sizing: border-box;
+    width: 20rem;
+    height: 20rem;
+    border: 1px solid #000;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.sample5-6::after{
+    left: 100px;
+    bottom: 50px;
+    width: 100px;
+    height:100px;
+    border-top: 1px solid #000;
+    border-right: 1px solid #000;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+*/
+
