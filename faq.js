@@ -4,6 +4,8 @@ var starttime = new Date().getTime();
 const host = window.location.hostname;
 
 
+
+
 $(".qa-list dd").hide();
 $(".qa-list dl").on("click", function(e){
     $('dd',this).slideToggle('fast');
@@ -207,6 +209,8 @@ if (host !== "rippoukotsu.github.io") {
 		$('.fon').fadeOut(500,function(){$(this).fadeIn(500)});
 		  },1000);//１秒毎に点滅
 	
+}else{
+	   stopload();
 }
 
  	});
@@ -221,13 +225,76 @@ if (host !== "rippoukotsu.github.io") {
  			return;
   } else {
     stopload();
+$('.fadeUpTrigger').each(function(){ //fadeInUpTriggerというクラス名が
+　　var elemPos = $(this).offset().top-100; //要素より、50px上の
+　　var scroll = $(window).scrollTop();
+　　var windowHeight = $(window).height();
+　　if (scroll >= elemPos - windowHeight){
+　
+$(this).addClass('fadeUp');
+
+　　// 画面内に入ったらfadeInというクラス名を追記
+　　}else{
+　　　
+
+$(this).removeClass('fadeUp');
+　　// 画面外に出たらfadeInというクラス名を外す
+　　}
+　　});
+
+
   }
 }else{
 	    stopload();
+	    $('.fadeUpTrigger').each(function(){ //fadeInUpTriggerというクラス名が
+　　var elemPos = $(this).offset().top-100; //要素より、50px上の
+　　var scroll = $(window).scrollTop();
+　　var windowHeight = $(window).height();
+　　if (scroll >= elemPos - windowHeight){
+　
+$(this).addClass('fadeUp');
+
+　　// 画面内に入ったらfadeInというクラス名を追記
+　　}else{
+　　　
+
+$(this).removeClass('fadeUp');
+　　// 画面外に出たらfadeInというクラス名を外す
+　　}
+　　});
 }
+
+
+
+　
 
  	});
 
  	function stopload(){
  		$('.start').fadeOut(500);
- 	}
+
+
+
+
+
+
+
+　　// 画面内に入ったらfadeInというクラス名を追記
+　
+　　　
+
+　　// 画面外に出たらfadeInというクラス名を外す
+　　}
+
+
+ 	
+
+
+
+
+
+
+
+
+
+ 
