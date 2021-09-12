@@ -1,6 +1,7 @@
 
 var starttime = new Date().getTime();
-
+// 自分のサイトからのアクセスなら「www.example.com」
+const host = window.location.hostname;
 
 
 $(".qa-list dd").hide();
@@ -195,24 +196,33 @@ $(this).removeClass('fadeDown');
 
 $(function(){
 
+	// 自分のサイトからのアクセスでなければ...
+if (host !== "rippoukotsu.github.io") {
+
  	$('.start p').fadeIn(1000);
 		
 
 		setInterval(function(){
 
 		$('.fon').fadeOut(500,function(){$(this).fadeIn(500)});
-		  },1000);
+		  },1000);//１秒毎に点滅
+	}
 
 
  	});
+
+
  	$(window).on('load', function(){
  		 var now = new Date().getTime();
+ 		 if (host !== "rippoukotsu.github.io") {
   if (now-starttime<=3000) {
   	setTimeout('stopload()',3000-(now-starttime));
  			return;
   } else {
     stopload();
   }
+
+}
  	});
 
  	function stopload(){
