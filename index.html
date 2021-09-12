@@ -244,11 +244,11 @@ slideWidth: width,
 
                
                 <span class="fadeDownTrigger fadeDown"><ul class="bxslider">
-                 <li><img src="img/ex1_1.jpg" alt="" ></li>
-                 <li><img src="img/ex1_2.jpg" alt=""></li>
-                 <li><img src="img/ex1_3.jpg" alt="" ></li>
-                 <li><img src="img/ex1_4.jpg" alt="" ></li>
-                 <li><img src="img/ex1_5.jpg" alt="" ></li>
+                 <li><img class="lazyload" data-src="img/ex1_1.jpg" alt="CLUSTER SEO" /></li>
+                 <li><img class="lazyload" data-src="img/ex1_2.jpg" alt="CLUSTER SEO" /></li>
+                 <li><img class="lazyload" data-src="img/ex1_3.jpg" alt="CLUSTER SEO" /></li>
+                 <li><img class="lazyload" data-src="img/ex1_4.jpg" alt="CLUSTER SEO" /></li>
+                 <li><img class="lazyload" data-src="img/ex1_5.jpg" alt="CLUSTER SEO" /></li>
                </ul></span>
 
             
@@ -507,7 +507,7 @@ slideWidth: width,
 
 <div class="start">
     <p><img src="img/Daisy_icon.png" width="80%" height="auto" alt=""></p>
-    初めて開く場合、一部画像が表示されていない可能性があります。再読み込みをしてください。
+    <div class="fon">now loading...</div>
 </div>
 
 
@@ -515,8 +515,12 @@ slideWidth: width,
 
 
 
-<a href="index.html"><div class="square"></div></a>
 
+<a href="index.html"><div class="square"></div></a>
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-rc.2/lazyload.min.js"></script>
+<script>
+    lazyload();
+</script>
 
 <script type="text/javascript" src="faq.js"></script><!-- FAQのjs読み込み -->
 

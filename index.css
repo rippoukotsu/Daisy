@@ -2516,13 +2516,16 @@ span{
 }
 */
 .start {
-  background: #FFF;
+  background: #EFE5CE;
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   z-index: 11000;
+
+
+
 }
 .start p {
   position: fixed;
@@ -2532,4 +2535,10 @@ span{
   display: none;
   z-index: 11111;
   width: 280px;
+}
+
+.fon {
+text-align: center;
+
+  margin-top: 35%;
 }
