@@ -1,5 +1,5 @@
 
-var time=new Date().getTime();
+var starttime = new Date().getTime();
 
 
 
@@ -175,27 +175,27 @@ $(this).removeClass('fadeDown');
 
 
 
- $(function() {
+//  $(function() {
 	
-		$('.start p').fadeIn(1600);
+// 		$('.start p').fadeIn(1600);
 		
 
-		setInterval(function(){
+// 		setInterval(function(){
 
-		$('.fon').fadeOut(500,function(){$(this).fadeIn(500)});
-		  },1000);
+// 		$('.fon').fadeOut(500,function(){$(this).fadeIn(500)});
+// 		  },1000);
 
 	
-	setTimeout(function(){
-		$('.start').fadeOut(500);
-	},2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
-});
+// 	setTimeout(function(){
+// 		$('.start').fadeOut(500);
+// 	},2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+// });
 
 
 
 $(function(){
-	
- 	$('.start p').fadeIn(1600);
+
+ 	$('.start p').fadeIn(1000);
 		
 
 		setInterval(function(){
@@ -207,7 +207,14 @@ $(function(){
  	});
  	$(window).on('load', function(){
  		 var now = new Date().getTime();
-  if (now-time>=3000) {
- 			$('.start').fadeOut(500);
- 		}
+  if (now-starttime<=3000) {
+  	setTimeout('stopload()',3000-(now-starttime));
+ 			return;
+  } else {
+    stopload();
+  }
  	});
+
+ 	function stopload(){
+ 		$('.start').fadeOut(500);
+ 	}
