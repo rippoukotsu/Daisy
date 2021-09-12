@@ -1,5 +1,5 @@
 
-
+var time=new Date().getTime();
 
 
 
@@ -176,11 +176,38 @@ $(this).removeClass('fadeDown');
 
 
  $(function() {
-	setTimeout(function(){
+	
 		$('.start p').fadeIn(1600);
-		$('.fon').fadeIn(1600);
-	},500); //0.5秒後にロゴをフェードイン!
+		
+
+		setInterval(function(){
+
+		$('.fon').fadeOut(500,function(){$(this).fadeIn(500)});
+		  },1000);
+
+	
 	setTimeout(function(){
 		$('.start').fadeOut(500);
 	},2500); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
 });
+
+
+
+$(function(){
+	
+ 	$('.start p').fadeIn(1600);
+		
+
+		setInterval(function(){
+
+		$('.fon').fadeOut(500,function(){$(this).fadeIn(500)});
+		  },1000);
+
+
+ 	});
+ 	$(window).on('load', function(){
+ 		 var now = new Date().getTime();
+  if (now-time>=3000) {
+ 			$('.start').fadeOut(500);
+ 		}
+ 	});
