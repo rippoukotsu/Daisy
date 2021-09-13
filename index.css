@@ -1797,9 +1797,7 @@ justify-content: center;
 .fon {
 
 
-  text-align: center ;
-  margin-top: 40%;
-  left: 50%;
+display:none;
 }
 
 .start h3 {
