@@ -181,8 +181,8 @@ $(this).removeClass('fadeDown');
 
  $(function() {
 	
-                		// 自分のサイトからのアクセスでなければ...
-// if (host !== "rippoukotsu.github.io") {
+                		自分のサイトからのアクセスでなければ...
+if (host !== "rippoukotsu.github.io") {
 
  	$('.start p').fadeIn(1000);
 		
@@ -199,9 +199,9 @@ $(this).removeClass('fadeDown');
 
 
 	
-// }else{
-// 	   stopload();
-// }
+}else{
+	   stopload();
+}
          
 
 	
