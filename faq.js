@@ -176,12 +176,43 @@ $(this).removeClass('fadeDown');
 
 
 
- $(function() {
+//  $(function() {
 	
-		// 自分のサイトからのアクセスでなければ...
-if (host !== "rippoukotsu.github.io") {
+// 		// 自分のサイトからのアクセスでなければ...
+// if (host !== "rippoukotsu.github.io") {
 
- 	$('.start p').fadeIn(1000);
+//  	$('.start p').fadeIn(1000);
+		
+
+// 		setInterval(function(){
+
+// 		$('.fon').fadeOut(500,function(){$(this).fadeIn(500)});
+// 		  },1000);//１秒毎に点滅
+
+
+// 		setTimeout(function(){
+// 		$('.start').fadeOut(500);
+// 	},3000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+
+
+	
+// }else{
+// 	   stopload();
+// }
+	
+	
+// });
+
+
+
+
+
+
+window.onload = function () {
+ if(sessionStorage.getItem('loading') === null || sessionStorage.getItem('loading') != "1"){
+   //ローディング実行
+
+   $('.start p').fadeIn(1000);
 		
 
 		setInterval(function(){
@@ -195,14 +226,16 @@ if (host !== "rippoukotsu.github.io") {
 	},3000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
 
 
-	
-}else{
-	   stopload();
-}
-	
-	
-});
 
+   sessionStorage.setItem('loading',"1");
+ }else{
+ 			
+		$('.start').fadeOut(0.1);
+
+	
+ }
+
+};
 
 /*
 $(function(){
@@ -243,9 +276,9 @@ if (host !== "rippoukotsu.github.io") {
 
  	});
 */
- 	function stopload(){
- 		$('.start').fadeOut(500);
- 	}
+ 	// function stopload(){
+ 	// 	$('.start').fadeOut(500);
+ 	// }
 
 
 
