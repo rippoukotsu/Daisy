@@ -209,15 +209,24 @@ $(this).removeClass('fadeDown');
 
 
 window.onload = function () {
+
+var windowWidth = $(window).width();
+
+if (windowWidth <= 640) {
+
+
  if(sessionStorage.getItem('loading') === null || sessionStorage.getItem('loading') != "1"){
    //ローディング実行
 
+
    $('.start p').fadeIn(1000);
-		
+   // $('.fon2').fadeIn(1000);
+		  
 
 		setInterval(function(){
 
-		$('.fon').fadeOut(500,function(){$(this).fadeIn(500)});
+		// $('.fon').fadeOut(500,function(){$(this).fadeIn(500)});
+			$('.fon').fadeOut(500,function(){$(this).fadeIn(500)});
 		  },1000);//１秒毎に点滅
 
 
@@ -234,6 +243,43 @@ window.onload = function () {
 
 	
  }
+
+
+}else if(windowWidth >= 641){
+
+ if(sessionStorage.getItem('loading') === null || sessionStorage.getItem('loading') != "1"){
+   //ローディング実行
+
+
+
+    $('.start p').fadeIn(1000);
+   // $('.fon2').fadeIn(1000);
+		   $('.start h3').fadeIn(1000);
+
+		setInterval(function(){
+
+		// $('.fon').fadeOut(500,function(){$(this).fadeIn(500)});
+			$('.start h4').fadeOut(500,function(){$(this).fadeIn(500)});
+		  },1300);//１秒毎に点滅
+
+
+		setTimeout(function(){
+		$('.start').fadeOut(500);
+	},10000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+
+
+
+   sessionStorage.setItem('loading',"1");
+ }else{
+ 			
+		$('.start').fadeOut(0.1);
+
+	
+ }
+
+}
+
+
 
 };
 
