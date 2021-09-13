@@ -197,7 +197,7 @@ if (host !== "rippoukotsu.github.io") {
 
 	
 }else{
-	   stopload();
+// 	   stopload();
 }
 	
 	
