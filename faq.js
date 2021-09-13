@@ -174,8 +174,15 @@ $(this).removeClass('fadeDown');
 
 
 
+        });
+
+
+
+
+ $(function() {
+	
                 		// 自分のサイトからのアクセスでなければ...
-if (host !== "rippoukotsu.github.io") {
+// if (host !== "rippoukotsu.github.io") {
 
  	$('.start p').fadeIn(1000);
 		
@@ -192,21 +199,14 @@ if (host !== "rippoukotsu.github.io") {
 
 
 	
-}else{
-	   stopload();
-}
+// }else{
+// 	   stopload();
+// }
          
-        });
-
-
-
-
-//  $(function() {
-	
 
 	
 	
-// });
+});
 
 
 /*
