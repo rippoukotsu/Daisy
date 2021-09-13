@@ -170,15 +170,11 @@ $(this).removeClass('fadeDown');
                 var position = target.offset().top;
                 $("html,body").animate({ scrollTop: position }, time, "swing");
                 return false;
-            });
-        });
+   });
 
 
 
-
- $(function() {
-	
-		// 自分のサイトからのアクセスでなければ...
+                		// 自分のサイトからのアクセスでなければ...
 if (host !== "rippoukotsu.github.io") {
 
  	$('.start p').fadeIn(1000);
@@ -197,11 +193,20 @@ if (host !== "rippoukotsu.github.io") {
 
 	
 }else{
-// 	   stopload();
+	   stopload();
 }
+         
+        });
+
+
+
+
+//  $(function() {
+	
+
 	
 	
-});
+// });
 
 
 /*
