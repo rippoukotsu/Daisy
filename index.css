@@ -1306,14 +1306,20 @@ line-height: 250%;
 
 
   text-align: center ;
-  margin-top: -20%;
+  margin-top: -30%;
 }
 .fon_ph{
   display:none;
 }
 
 
+.start a{
+   position: fixed;
+   left:15%;
 
+    bottom: 10%;
+    margin-top:auto;
+}
 
 
 
@@ -1871,13 +1877,21 @@ font-size:1em;
 
 
   text-align: center ;
-  margin-top: -11%;
+  margin-top: -20%;
 }
 
 .fon_ph{
   display:none;
 }
  
+
+ .start a{
+   position: fixed;
+   left:15%;
+
+    bottom: 10%;
+    margin-top:auto;
+}
 }
 
 
