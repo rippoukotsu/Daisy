@@ -210,9 +210,9 @@ $(this).removeClass('fadeDown');
 
 $(function () {
 
-var windowWidth = $(window).width();
+// var windowWidth = $(window).width();
 
-if (windowWidth <= 399) {
+// if (windowWidth <= 399) {
 
 
  if(sessionStorage.getItem('loading') === null || sessionStorage.getItem('loading') != "1"){
@@ -221,12 +221,14 @@ if (windowWidth <= 399) {
 
    $('.road_icon').fadeIn(1000);
    // $('.fon2').fadeIn(1000);
+    $('.fon_ph').fadeIn(500);
 		  
 
 		setInterval(function(){
 
 		// $('.fon').fadeOut(500,function(){$(this).fadeIn(500)});
 			$('.fon_ph').fadeOut(500,function(){$(this).fadeIn(500)});
+       $('.road_icon').fadeOut(1000,function(){$(this).fadeIn(1000)});
 		  },1000);//１秒毎に点滅
 
 
@@ -245,10 +247,10 @@ if (windowWidth <= 399) {
  }
 
 
-}else if(windowWidth >= 400){
+// }//else if(windowWidth >= 400){
 
- if(sessionStorage.getItem('loading') === null || sessionStorage.getItem('loading') != "1"){
-   //ローディング実行
+//  if(sessionStorage.getItem('loading') === null || sessionStorage.getItem('loading') != "1"){
+//    //ローディング実行
 
 
 
@@ -265,21 +267,21 @@ if (windowWidth <= 399) {
 
 
 
-		setTimeout(function(){
-		$('.start').fadeOut(500);
-	},15000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+// 		setTimeout(function(){
+// 		$('.start').fadeOut(500);
+// 	},15000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
 
 
 
-   sessionStorage.setItem('loading',"1");
- }else{
+//    sessionStorage.setItem('loading',"1");
+//  }else{
  			
-		$('.start').fadeOut(0.1);
+// 		$('.start').fadeOut(0.1);
 
 	
- }
+//  }
 
-}
+// }
 
 
 
