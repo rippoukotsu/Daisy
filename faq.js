@@ -212,21 +212,21 @@ window.onload = function () {
 
 var windowWidth = $(window).width();
 
-if (windowWidth <= 640) {
+if (windowWidth <= 399) {
 
 
  if(sessionStorage.getItem('loading') === null || sessionStorage.getItem('loading') != "1"){
    //ローディング実行
 
 
-   $('.start p').fadeIn(1000);
+   $('.road_icon').fadeIn(1000);
    // $('.fon2').fadeIn(1000);
 		  
 
 		setInterval(function(){
 
 		// $('.fon').fadeOut(500,function(){$(this).fadeIn(500)});
-			$('.fon').fadeOut(500,function(){$(this).fadeIn(500)});
+			$('.fon_ph').fadeOut(500,function(){$(this).fadeIn(500)});
 		  },1000);//１秒毎に点滅
 
 
@@ -245,27 +245,29 @@ if (windowWidth <= 640) {
  }
 
 
-}else if(windowWidth >= 641){
+}else if(windowWidth >= 400){
 
  if(sessionStorage.getItem('loading') === null || sessionStorage.getItem('loading') != "1"){
    //ローディング実行
 
 
 
-    $('.start p').fadeIn(1000);
+    $('.road_icon').fadeIn(1000);
    // $('.fon2').fadeIn(1000);
-		   $('.start h3').fadeIn(1000);
+		   $('.fon').fadeIn(500);
 
 		setInterval(function(){
 
 		// $('.fon').fadeOut(500,function(){$(this).fadeIn(500)});
-			$('.start h4').fadeOut(500,function(){$(this).fadeIn(500)});
-		  },1300);//１秒毎に点滅
+			$('.fon').fadeOut(500,function(){$(this).fadeIn(500)});
+        $('.road_icon').fadeOut(1000,function(){$(this).fadeIn(1000)});
+		  },1000);
+
 
 
 		setTimeout(function(){
 		$('.start').fadeOut(500);
-	},10000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
+	},12000); //2.5秒後にロゴ含め真っ白背景をフェードアウト！
 
 
 
