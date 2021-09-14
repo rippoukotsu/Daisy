@@ -208,7 +208,7 @@ $(this).removeClass('fadeDown');
 
 
 
-window.onload = function () {
+$(function () {
 
 var windowWidth = $(window).width();
 
@@ -283,7 +283,7 @@ if (windowWidth <= 399) {
 
 
 
-};
+});
 
 /*
 $(function(){

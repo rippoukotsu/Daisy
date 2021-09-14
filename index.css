@@ -657,10 +657,10 @@ justify-content: center;
   position: fixed;
   left: 53%;
   top: 47%;
-  transform: translate(-50%, -50%);
+  /*transform: translate(-50%, -50%);*/
 
   z-index: 11111;
-  width: 200px;
+/*  width: 200px;*/
 }
 
 .fon_ph {
@@ -781,12 +781,13 @@ font-size:1.5em;
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-top:10px;
     
   /*justify-content: center;*/
 }
 #gNav .gNav-menu li{
   display: block;
-  padding : 20px 30px;
+  padding : 15px 30px;
 }
 #gNav .gNav-menu li a{
   color: #666;
@@ -1272,43 +1273,44 @@ justify-content: center;
   position: fixed;
 font-size:1em;
 
- /* text-align: center ;
-  margin-top: 0;*/
-    margin-left: 60%;
+  text-align: center ;
+/*  margin-top: 0;*/
+/*    margin-left: 80%;*/
   bottom: 10%;
 }
+
 
 
 .start h3 {
   position: fixed;
 font-size:1em;
+line-height: 300%;
 
   text-align: center ;
-  margin-top: -40%;
-  line-height: 400%;
-
+  margin-top: -25%;
 }
+
 .start p {
-/*  position: fixed;*/
+  /*position: fixed;*/
 font-size:1em;
+line-height: 250%;
 
   text-align: center ;
-  margin-top: 20%;
-  line-height: 300%;
+  margin-top: 15%;
+
 
 }
-
 .mik{
     position: fixed;
 
 
   text-align: center ;
-  margin-top: -20%;
+  margin-top: -13%;
 }
 .fon_ph{
   display:none;
 }
- 
+
 
 
 
@@ -1828,9 +1830,9 @@ justify-content: center;
   position: fixed;
 font-size:1em;
 
- /* text-align: center ;
-  margin-top: 0;*/
-    margin-left: 80%;
+  text-align: center ;
+/*  margin-top: 0;*/
+/*    margin-left: 80%;*/
   bottom: 10%;
 }
 
@@ -1840,7 +1842,7 @@ font-size:1em;
 line-height: 300%;
 
   text-align: center ;
-  margin-top: -25%;
+  margin-top: -17%;
 }
 
 .start p {
@@ -1849,7 +1851,7 @@ font-size:1em;
 line-height: 250%;
 
   text-align: center ;
-  margin-top: 20%;
+  margin-top: 15%;
 
 
 }
@@ -1868,7 +1870,7 @@ font-size:1em;
 
 
   text-align: center ;
-  margin-top: -10%;
+  margin-top: -8%;
 }
 
 .fon_ph{
