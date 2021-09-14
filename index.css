@@ -1288,7 +1288,7 @@ font-size:1em;
 line-height: 300%;
 
   text-align: center ;
-  margin-top: -25%;
+  margin-top: -33%;
 }
 
 .start p {
@@ -1306,7 +1306,7 @@ line-height: 250%;
 
 
   text-align: center ;
-  margin-top: -13%;
+  margin-top: -20%;
 }
 .fon_ph{
   display:none;
@@ -1818,7 +1818,7 @@ justify-content: center;
 .road_icon {
   position: fixed;
   left: 5%;
-  top: 7%;
+  top: 2%;
  /* transform: translate(-50%, -50%);*/
 
   z-index: 11111;
@@ -1843,7 +1843,7 @@ font-size:1em;
 line-height: 300%;
 
   text-align: center ;
-  margin-top: -17%;
+  margin-top: -25%;
 }
 
 .start p {
@@ -1852,7 +1852,7 @@ font-size:1em;
 line-height: 250%;
 
   text-align: center ;
-  margin-top: 15%;
+  margin-top: 17%;
 
 
 }
@@ -1871,7 +1871,7 @@ font-size:1em;
 
 
   text-align: center ;
-  margin-top: -8%;
+  margin-top: -11%;
 }
 
 .fon_ph{
