@@ -655,7 +655,8 @@ justify-content: center;
 }
 .road_icon {
   position: fixed;
-align-items: center;
+/*align-items: center;*/
+left:30%;
   top: 47%;
   /*transform: translate(-50%, -50%);*/
 
@@ -781,7 +782,7 @@ font-size:1.5em;
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin-top:3%;
+  /*margin-top:3%;*/
     
   /*justify-content: center;*/
 }
