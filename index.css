@@ -1928,9 +1928,11 @@ header {
     display: flex;
     align-items: center;
         position: fixed;
+
         background: linear-gradient(rgba(237,214,162,1) 60%,rgba(237,214,162,0));
 
     z-index: 10000;
+    width:100%;
 }
 
 
