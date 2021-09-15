@@ -1973,6 +1973,15 @@ display:inline;
 .slider0 ul{
 
   display:flex;
+
+  
+  
+
+}
+.slider0 p{
+
+margin-bottom: 9%
+
   
   
 
@@ -2125,12 +2134,13 @@ margin-left:10%;
 margin-right:10%;
 line-height: 250%;
 margin-bottom: 10%;
+
  
 }
 
 .ex1_tex p{
 
-   margin-top: 1%;
+   margin-top: 30%;
     width :100%;
 
 }
@@ -2765,4 +2775,39 @@ span{
     transform: rotate(135deg);
 }
 */
+
+#layout01 {
+/*  background-color: red;*/
+  width: 60%;
+/*  height: 30%;*/
+  float: left;  /* 回り込み */
+}
+ 
+#layout02 {
+/*  background-color: green;*/
+   width: 29.9%;
+  /*width: 300px;*/
+  height: 150%;
+  float: left;  /* 回り込み */
+/*  bottom:10%;*/
+}
+ 
+#layout02_01 {
+/*  background-color: blue;*/
+   width: 100%;
+
+ /* width: 300px;
+  height: 100px;*/  /* 高さ */
+}
+ 
+#layout02_02 {
+/*  background-color: purple;*/
+  
+   width: 100%;
+/*   height:130%;*/
+  /*width: 300px;
+  height: 100px;*/  /* 高さ */
+}
+
+
 
